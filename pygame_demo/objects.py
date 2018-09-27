@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 import pygame
 import time
 
+
 class GameObject(ABC):
 
     @abstractmethod
