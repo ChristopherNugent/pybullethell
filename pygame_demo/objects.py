@@ -43,7 +43,7 @@ class Player(GameObject):
 
     def draw(self, surface):
         if self.alive:
-            color = (pygame.Color('blue') if self.alive
+            color = (pygame.Color('white') if self.alive
                      else pygame.Color('black'))
             pygame.draw.rect(surface, color,
                              (self.x, self.y, Player.SIZE, Player.SIZE))
