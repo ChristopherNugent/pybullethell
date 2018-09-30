@@ -33,16 +33,16 @@ class Player(GameObject):
 
     def tick(self):
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_LEFT]:
+        if keys[pygame.K_LEFT] or keys[pygame.K_a]:
             self.x = max(0, min(self.x - Player.SPEED,
                                 self.game_size_x - Player.SIZE))
-        if keys[pygame.K_RIGHT]:
+        if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
             self.x = max(0, min(self.x + Player.SPEED,
                                 self.game_size_x - Player.SIZE))
-        if keys[pygame.K_UP]:
+        if keys[pygame.K_UP] or keys[pygame.K_w]:
             self.y = max(0, min(self.y - Player.SPEED,
                                 self.game_size_y - Player.SIZE))
-        if keys[pygame.K_DOWN]:
+        if keys[pygame.K_DOWN] or keys[pygame.K_s]:
             self.y = max(0, min(self.y + Player.SPEED,
                                 self.game_size_y - Player.SIZE))
 
