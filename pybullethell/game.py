@@ -43,6 +43,8 @@ class Game:
         for bullet in self.bullets:
             bullet.draw(surface)
         self.draw_score(surface)
+        if not self.player.alive:
+            self.draw_newgame_message(surface)
 
     def random_bullet(self):
         max_speed = 3
@@ -67,7 +69,8 @@ class Game:
     def draw_newgame_message(self, surface):
         rendered_text = self.font.render('Press SPACE for new game', True,
                                          pygame.Color('white'))
-        surface.blit(rendered_text)
+        surface.blit(rendered_text,
+                     (10, self.size_y - rendered_text.get_height() - 10))
 
     def death_explosion(x, y):
         return list([Bullet(x, y, xs, ys, pygame.Color('white')) for xs, ys
