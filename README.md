@@ -1,3 +1,3 @@
 # Usage
 
-`python3 pygame_demo`
+`python3 pybullethell`
