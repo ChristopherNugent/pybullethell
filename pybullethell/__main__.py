@@ -1,8 +1,8 @@
 import pygame
 from game import Game
 
-SIZE_X = 800
-SIZE_Y = 500
+SIZE_X = 1000
+SIZE_Y = 600
 TICKS_PER_BULLET = 5
 
 if __name__ == '__main__':
