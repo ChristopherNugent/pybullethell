@@ -8,7 +8,7 @@ TICKS_PER_BULLET = 5
 if __name__ == '__main__':
     pygame.font.init()
     pygame.init()
-    pygame.display.set_caption('PyGame demo')
+    pygame.display.set_caption('pyBullethell')
 
     screen = pygame.display.set_mode((SIZE_X, SIZE_Y))
     clock = pygame.time.Clock()
